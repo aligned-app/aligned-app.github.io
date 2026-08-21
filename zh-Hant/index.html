@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALIGNED — 讓每一頁都對齊</title>
+<meta name="description" content="ALIGNED 是為 Instagram 多頁輪播打造的排版工具。整個輪播是一條連續畫布，照片、文字、影片跨頁編排、精準對齊，一次匯出整組貼文。免費、開源，Mac／Windows／iOS。">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="ALIGNED — 讓每一頁都對齊">
+<meta property="og:description" content="IG 跨頁排版工作檯。整個輪播是一條連續畫布，匯出時自動切片。免費開源。">
+<meta property="og:url" content="https://aligned-app.github.io/zh-Hant/">
+<meta property="og:image" content="https://aligned-app.github.io/media/og.png">
+<link rel="canonical" href="https://aligned-app.github.io/zh-Hant/">
+<link rel="alternate" hreflang="zh-Hant" href="https://aligned-app.github.io/zh-Hant/">
+<link rel="alternate" hreflang="en" href="https://aligned-app.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://aligned-app.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0d10'/><path d='M13 8 L9 8 L9 24 L13 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M19 8 L23 8 L23 24 L19 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="wordmark" href="./">ALIGN<b>ED</b></a>
+    <nav class="main">
+      <a href="#features">功能</a>
+      <a href="#download">下載</a>
+      <a href="#faq">常見問題</a>
+      <a href="https://qwert2813434-ctrl.github.io/aligned-help/zh-Hant/">使用說明</a>
+    </nav>
+    <div class="top-spacer"></div>
+    <details class="lang">
+      <summary>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9S14.6 18.4 12 21c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3Z"/></svg>
+        繁體中文
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <nav class="lang-menu">
+        <a class="current" href="./">繁體中文</a>
+        <a href="../en/">English</a>
+      </nav>
+    </details>
+    <button class="iconbtn" id="themeToggle" aria-label="切換深淺色">
+      <svg class="moon-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+      <svg class="sun-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+    </button>
+    <a class="iconbtn" href="https://github.com/qwert2813434-ctrl/ALIGNED" aria-label="GitHub">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+    </a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">免費 · 開源 · Mac ／ Windows ／ iOS</p>
+      <h1>讓每一頁，<br>都對齊。</h1>
+      <p class="lede">ALIGNED 是為 Instagram 多頁輪播打造的排版工具。照片、文字、影片，像雜誌內頁一樣跨頁編排、精準對齊、即時預覽，一次匯出整組貼文。</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/qwert2813434-ctrl/ALIGNED/releases/latest/download/ALIGNED-macOS-arm64.dmg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4.5-4.5M12 15 7.5 10.5M4 20h16"/></svg>
+          下載 macOS 版
+        </a>
+        <a class="btn ghost" href="https://github.com/qwert2813434-ctrl/ALIGNED/releases/latest/download/ALIGNED-windows-x64-setup.exe">下載 Windows 版</a>
+        <a class="btn quiet" href="https://github.com/qwert2813434-ctrl/ALIGNED">GitHub 原始碼</a>
+      </div>
+      <p class="cta-note">macOS 13+（Apple Silicon）・Windows 10+ 64 位元・iPhone／iPad 版審核中</p>
+    </div>
+    <div class="hero-media">
+      <div class="carousel">
+        <div class="phone"><video src="../media/pack-1.mp4" muted loop playsinline autoplay preload="metadata"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-2.mp4"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-3.mp4"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-4.mp4"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-5.mp4"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-6.mp4"></video></div>
+      </div>
+      <div class="car-ctrl">
+        <button class="car-btn" data-dir="-1" aria-label="上一支"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 6-6 6 6 6"/></svg></button>
+        <div class="dots"></div>
+        <button class="car-btn" data-dir="1" aria-label="下一支"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 6 6 6-6 6"/></svg></button>
+      </div>
+      <p class="media-cap">左右滑動——六支功能亮點</p>
+    </div>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap sig-grid">
+    <div class="media">
+      <div class="phone"><video muted loop playsinline preload="none" data-src="../media/guides.mp4"></video></div>
+    </div>
+    <div>
+      <p class="kicker">招牌功能</p>
+      <h2>整個輪播，<br>是一條連續畫布</h2>
+      <p class="lede" style="margin-bottom:0">別的工具把輪播當成 N 張獨立的方形畫板；ALIGNED 把它當成一條長畫布——一張圖可以橫跨三、四頁，頁縫變成構圖的一部分。匯出時自動切片，動一個物件也不用重切。</p>
+      <ul class="points">
+        <li><b>跨頁吸附與參考線</b>——磁吸和對齊基準不受頁面邊界限制，整份專案共用同一組參考線。</li>
+        <li><b>文字以字身外緣吸附</b>——不是吸附含空白的外框，字看起來對齊就是真的對齊。</li>
+        <li><b>三段磁吸、群組對齊、等距分布</b>——每個元素都落在該在的位置。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="features">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">功能</p>
+      <h2>從排版到動態，一站做完</h2>
+      <p>以下每支影片都是實際操作錄影，不是概念示意。</p>
+    </div>
+    <div class="feature-grid">
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/text-system.mp4"></video></div>
+        <h3>直排與中文排版</h3>
+        <p>直排一鍵切換，標點自動轉直排字形；字距、行距、段落間距同一套語言，加大字距後置中仍是真正的光學置中。</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/multiselect-copy.mp4"></video></div>
+        <h3>多選與跨專案複製</h3>
+        <p>多選物件保持相對位置複製，也能整組複製到另一個專案——版面資產帶著走。</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/grid.mp4"></video></div>
+        <h3>欄位版面</h3>
+        <p>一鍵鋪出兩格、三格、2×2、3×3 的格狀版面，每一格再填入照片或影片。</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/anim-2stage.mp4"></video></div>
+        <h3>出場動畫</h3>
+        <p>文字與物件各四種效果、兩段式縮放、一鍵「陸續出現」。會動的頁匯出時自動合成 mp4，所見即所得。</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/carousel.mp4"></video></div>
+        <h3>多圖輪播</h3>
+        <p>同一個框放多張圖循環播放，直切或連續遮罩兩種轉場。</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/3d.mp4"></video></div>
+        <h3>3D 物件</h3>
+        <p>拖入 .glb 模型：靜止、慢慢轉圈、或快轉煞停——連停在哪一面都能指定。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">還有這些</p>
+      <h2>細節都顧到了</h2>
+    </div>
+    <div class="spec-grid">
+      <div class="spec"><b>八點裁切與拉直</b><span>角落等比縮放、邊緣單側裁切，照片不動、框在裁。</span></div>
+      <div class="spec"><b>九顆濾鏡</b><span>全部免費，含形狀遮罩、描邊、去背貼紙。</span></div>
+      <div class="spec"><b>文字排開</b><span>文字繞著圖片、圖形、影片走——一個開關的事。</span></div>
+      <div class="spec"><b>紙張紋理</b><span>可分別套用在物件、背景、文字上。</span></div>
+      <div class="spec"><b>字型自由</b><span>內建可商用字型，也能匯入自己的字型檔。</span></div>
+      <div class="spec"><b>三種預覽</b><span>輪播、連續長圖、Threads；桌面版十頁攤開一眼看完。</span></div>
+      <div class="spec"><b>參考線記憶欄</b><span>九格儲存、跨專案共用，⌥1–9 快速取用。</span></div>
+      <div class="spec"><b>自動保存</b><span>閒置 2.5 秒自動存檔，切換前完整寫入。</span></div>
+      <div class="spec"><b>完全離線</b><span>無帳號、無雲端、無遙測，作品只存在你的裝置上。</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap ai-grid">
+    <div>
+      <p class="kicker">獨家</p>
+      <h2>AI 也能直接寫專案檔</h2>
+      <p class="lede" style="margin-bottom:0">ALIGNED 的專案檔 .alignproj 是有完整文件的 JSON。任何 AI 讀完規格書，就能替你產出一整份輪播——在 ALIGNED 打開，每個物件都還是活的、可編輯的，不是壓平的圖片。</p>
+      <div class="cta-row" style="margin-top:26px">
+        <a class="btn ghost" href="https://github.com/qwert2813434-ctrl/ALIGNED">看規格書（GitHub）</a>
+      </div>
+    </div>
+    <pre class="code">{
+  <span class="k">"pages"</span>: 4,
+  <span class="k">"ratio"</span>: "4:5",
+  <span class="k">"objects"</span>: [
+    { <span class="k">"type"</span>: "image",
+      <span class="k">"spansPages"</span>: [1, 2, 3] },
+    { <span class="k">"type"</span>: "text",
+      <span class="k">"content"</span>: "跨頁的字",
+      <span class="k">"vertical"</span>: true }
+  ]
+}  <span style="opacity:.5">// 結構示意</span></pre>
+  </div>
+</section>
+
+<section class="block" id="download">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">下載</p>
+      <h2>三個平台</h2>
+      <p>現階段所有功能免費；Mac 與 Windows 版開源（GPL-3.0）。</p>
+    </div>
+    <div class="dl-grid">
+      <div class="dl">
+        <svg class="plat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="11.5" rx="1.6"/><path d="M2 19.5h20"/></svg>
+        <h3>macOS</h3>
+        <p class="req">macOS 13 Ventura 以上・Apple Silicon（M1 起）</p>
+        <a class="btn primary" href="https://github.com/qwert2813434-ctrl/ALIGNED/releases/latest/download/ALIGNED-macOS-arm64.dmg">下載 DMG</a>
+        <p class="note">已簽章並公證，下載即開。不支援 Intel Mac。</p>
+      </div>
+      <div class="dl">
+        <svg class="plat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12.5" rx="1.6"/><path d="M9.5 21h5M12 17v4"/></svg>
+        <h3>Windows</h3>
+        <p class="req">Windows 10 以上・64 位元（需 WebView2）</p>
+        <a class="btn ghost" href="https://github.com/qwert2813434-ctrl/ALIGNED/releases/latest/download/ALIGNED-windows-x64-setup.exe">下載安裝檔</a>
+        <p class="note">安裝檔尚未簽章，首次開啟請點「其他資訊 → 仍要執行」。影片頁與動畫匯出暫時僅 Mac 版提供。</p>
+      </div>
+      <div class="dl">
+        <svg class="plat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.4"/><path d="M10.5 5h3"/></svg>
+        <h3>iPhone ／ iPad<span class="badge">審核中</span></h3>
+        <p class="req">iOS ／ iPadOS・原生 App</p>
+        <p class="note" style="margin-top:2px">正在 App Store 審核中，上架後會在這裡補上連結。想第一時間知道，寫信到 <a href="mailto:alignediosapp@gmail.com" style="color:var(--accent);text-decoration:none">alignediosapp@gmail.com</a>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="block-head center">
+      <p class="kicker">常見問題</p>
+      <h2>先回答你可能想問的</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>ALIGNED 是免費的嗎？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>現階段所有功能免費。Mac 與 Windows 版以 GPL-3.0 開源；名稱與 logo 是商標、不在授權範圍內，fork 請改名。</p>
+      </details>
+      <details>
+        <summary>我的作品存在哪裡？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>只存在你的裝置上。ALIGNED 完全離線運作——沒有帳號、沒有雲端、沒有遙測，它從你的磁碟開檔、寫回你的磁碟。</p>
+      </details>
+      <details>
+        <summary>Intel Mac 可以用嗎？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>不行。Mac 版需要 Apple Silicon（M1 或更新）與 macOS 13 以上。</p>
+      </details>
+      <details>
+        <summary>Windows 安裝時跳出警告？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Windows 安裝檔尚未購買簽章憑證，SmartScreen 會出現提示——點「其他資訊 → 仍要執行」即可。安裝檔內容與 GitHub 上的原始碼一致。</p>
+      </details>
+      <details>
+        <summary>跟 Canva 這類工具差在哪？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>ALIGNED 不是範本工具，沒有素材市集、雲端與帳號。它解的是一件事：「一張圖橫跨多頁」的排版、對齊與切片——這件事在別的工具裡都得手動切圖，動一下就重切一次。</p>
+      </details>
+      <details>
+        <summary>遇到問題怎麼回報？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>寫信到 <a href="mailto:alignediosapp@gmail.com" style="color:var(--accent)">alignediosapp@gmail.com</a>，或在 GitHub 開 issue——我們會親自看、親自回。這是接案工作之餘維護的個人專案，回覆盡力而為，先說在前面。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="page">
+  <div class="wrap">
+    <div class="foot-row">
+      <a href="https://qwert2813434-ctrl.github.io/aligned-help/zh-Hant/">使用說明</a>
+      <a href="https://qwert2813434-ctrl.github.io/aligned-help/zh-Hant/faq.html">完整 FAQ</a>
+      <a href="https://qwert2813434-ctrl.github.io/tools/aligned-templates/">排版範本分享</a>
+      <a href="https://github.com/qwert2813434-ctrl/ALIGNED">GitHub</a>
+      <a href="https://qwert2813434-ctrl.github.io/tools/">小高工具間</a>
+      <a href="mailto:alignediosapp@gmail.com">alignediosapp@gmail.com</a>
+    </div>
+    <p class="foot-copy">© 2026 小高 Armin Kao — ALIGNED 名稱與 logo 為商標。Mac／Windows 版以 GPL-3.0 授權開源。</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>

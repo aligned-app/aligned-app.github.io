@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALIGNED</title>
+<link rel="alternate" hreflang="zh-Hant" href="https://aligned-app.github.io/zh-Hant/">
+<link rel="alternate" hreflang="en" href="https://aligned-app.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://aligned-app.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0d10'/><path d='M13 8 L9 8 L9 24 L13 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M19 8 L23 8 L23 24 L19 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<script>
+// 依瀏覽器語言分流：中文 → 繁中版，其餘 → 英文版
+(function(){
+  var langs = navigator.languages || [navigator.language || 'en'];
+  var zh = langs.some(function(l){ return /^zh/i.test(l); });
+  location.replace(zh ? 'zh-Hant/' : 'en/');
+})();
+</script>
+<meta http-equiv="refresh" content="1;url=zh-Hant/">
+<style>
+body{margin:0;background:#0d0d10;color:#f2f1ee;font-family:-apple-system,"PingFang TC",sans-serif;
+display:flex;min-height:100vh;align-items:center;justify-content:center}
+a{color:#ff4d84;text-decoration:none;margin:0 10px}
+</style>
+</head>
+<body>
+<noscript><p><a href="zh-Hant/">繁體中文</a>|<a href="en/">English</a></p></noscript>
+</body>
+</html>

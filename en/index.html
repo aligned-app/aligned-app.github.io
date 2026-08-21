@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALIGNED — get every page aligned</title>
+<meta name="description" content="ALIGNED is a layout tool built for multi-page Instagram carousels. The whole carousel is one continuous canvas — images, text and video cross the page seams, and it slices on export. Free, open source, for Mac / Windows / iOS.">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="ALIGNED — get every page aligned">
+<meta property="og:description" content="Instagram carousels on one continuous canvas. Lay out across the seams; it slices on export. Free and open source.">
+<meta property="og:url" content="https://aligned-app.github.io/en/">
+<meta property="og:image" content="https://aligned-app.github.io/media/og.png">
+<link rel="canonical" href="https://aligned-app.github.io/en/">
+<link rel="alternate" hreflang="zh-Hant" href="https://aligned-app.github.io/zh-Hant/">
+<link rel="alternate" hreflang="en" href="https://aligned-app.github.io/en/">
+<link rel="alternate" hreflang="x-default" href="https://aligned-app.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0d10'/><path d='M13 8 L9 8 L9 24 L13 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M19 8 L23 8 L23 24 L19 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="wordmark" href="./">ALIGN<b>ED</b></a>
+    <nav class="main">
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://qwert2813434-ctrl.github.io/aligned-help/en/">How to Use</a>
+    </nav>
+    <div class="top-spacer"></div>
+    <details class="lang">
+      <summary>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9S14.6 18.4 12 21c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3Z"/></svg>
+        English
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <nav class="lang-menu">
+        <a href="../zh-Hant/">繁體中文</a>
+        <a class="current" href="./">English</a>
+      </nav>
+    </details>
+    <button class="iconbtn" id="themeToggle" aria-label="Toggle theme">
+      <svg class="moon-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+      <svg class="sun-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+    </button>
+    <a class="iconbtn" href="https://github.com/qwert2813434-ctrl/ALIGNED" aria-label="GitHub">
+      <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+    </a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Free · Open Source · Mac ／ Windows ／ iOS</p>
+      <h1>Get every page aligned.</h1>
+      <p class="lede">ALIGNED is a layout tool built for multi-page Instagram carousels. Place photos, text and video across pages like a magazine spread, align them precisely, preview, and export the whole set at once.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/qwert2813434-ctrl/ALIGNED/releases/latest/download/ALIGNED-macOS-arm64.dmg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4.5-4.5M12 15 7.5 10.5M4 20h16"/></svg>
+          Download for macOS
+        </a>
+        <a class="btn ghost" href="https://github.com/qwert2813434-ctrl/ALIGNED/releases/latest/download/ALIGNED-windows-x64-setup.exe">Download for Windows</a>
+        <a class="btn quiet" href="https://github.com/qwert2813434-ctrl/ALIGNED">Source on GitHub</a>
+      </div>
+      <p class="cta-note">macOS 13+ (Apple Silicon) · Windows 10+ 64-bit · iPhone/iPad version in App Store review</p>
+    </div>
+    <div class="hero-media">
+      <div class="carousel">
+        <div class="phone"><video src="../media/pack-1.mp4" muted loop playsinline autoplay preload="metadata"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-2.mp4"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-3.mp4"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-4.mp4"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-5.mp4"></video></div>
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/pack-6.mp4"></video></div>
+      </div>
+      <div class="car-ctrl">
+        <button class="car-btn" data-dir="-1" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 6-6 6 6 6"/></svg></button>
+        <div class="dots"></div>
+        <button class="car-btn" data-dir="1" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 6 6 6-6 6"/></svg></button>
+      </div>
+      <p class="media-cap">Swipe through — six feature highlights</p>
+    </div>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap sig-grid">
+    <div class="media">
+      <div class="phone"><video muted loop playsinline preload="none" data-src="../media/guides.mp4"></video></div>
+    </div>
+    <div>
+      <p class="kicker">The core idea</p>
+      <h2>The whole carousel is one continuous canvas</h2>
+      <p class="lede" style="margin-bottom:0">Other tools model a carousel as N separate square artboards. ALIGNED models it as one long canvas — a single image can run across three or four slides, and the seam becomes part of the composition. It slices on export, so nudging an element never means re-slicing by hand.</p>
+      <ul class="points">
+        <li><b>Snapping and guides that cross page boundaries</b> — one set of guides shared by the entire project.</li>
+        <li><b>Text snaps on the outer edge of the glyphs</b>, not the bounding box — when text looks aligned, it is.</li>
+        <li><b>Three-level magnetic snapping, group align, equal distribution</b> — every element lands exactly where it should.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="features">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">Features</p>
+      <h2>From layout to motion, in one place</h2>
+      <p>Every clip below is a real screen recording, not a mockup.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/text-system.mp4"></video></div>
+        <h3>Vertical &amp; CJK typography</h3>
+        <p>One-tap vertical (top-to-bottom) text with proper punctuation forms; letter spacing, line height and paragraph spacing share one consistent language, with true optical centering.</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/multiselect-copy.mp4"></video></div>
+        <h3>Multi-select &amp; cross-project copy</h3>
+        <p>Copy multiple objects keeping their relative positions — even into another project. Your layout assets travel with you.</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/grid.mp4"></video></div>
+        <h3>Grid layouts</h3>
+        <p>Lay down 2-up, 3-up, 2×2 or 3×3 grids in one tap, then fill each cell with a photo or video.</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/anim-2stage.mp4"></video></div>
+        <h3>Entrance animations</h3>
+        <p>Four effects each for text and objects, two-stage zoom, one-tap staggered reveal. Animated pages export as mp4 — what you see is what you get.</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/carousel.mp4"></video></div>
+        <h3>Multi-image loops</h3>
+        <p>Several images cycling inside one frame, with hard-cut or continuous-mask transitions.</p>
+      </div>
+      <div class="card">
+        <div class="phone"><video muted loop playsinline preload="none" data-src="../media/3d.mp4"></video></div>
+        <h3>3D objects</h3>
+        <p>Drop in a .glb model: still, slow spin, or fast spin with a brake — you even choose which face it stops on.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">And more</p>
+      <h2>The details are covered</h2>
+    </div>
+    <div class="spec-grid">
+      <div class="spec"><b>8-point crop &amp; straighten</b><span>Corners scale proportionally; edge handles crop one side while the photo stays put.</span></div>
+      <div class="spec"><b>9 filters</b><span>All free, plus shape masks, borders and cut-out stickers.</span></div>
+      <div class="spec"><b>Text wrap</b><span>Text flows around images, shapes and video — one switch.</span></div>
+      <div class="spec"><b>Paper textures</b><span>Applied separately to objects, background or text.</span></div>
+      <div class="spec"><b>Font freedom</b><span>Commercial-use fonts built in, and you can import your own font files.</span></div>
+      <div class="spec"><b>Three previews</b><span>Carousel, continuous strip and Threads; on desktop, ten pages open in one look.</span></div>
+      <div class="spec"><b>Guide memory slots</b><span>Nine slots, shared across projects, ⌥1–9 to recall.</span></div>
+      <div class="spec"><b>Auto-save</b><span>Saves after 2.5 s idle and flushes fully before switching away.</span></div>
+      <div class="spec"><b>Fully offline</b><span>No account, no cloud, no telemetry — your work stays entirely on your device.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap ai-grid">
+    <div>
+      <p class="kicker">One more thing</p>
+      <h2>AI can write project files directly</h2>
+      <p class="lede" style="margin-bottom:0">The .alignproj project file is documented JSON, with a spec written for LLMs to read. Have Claude or GPT draft a whole carousel, open the file in ALIGNED — and every block is still live and editable, not a flattened image.</p>
+      <div class="cta-row" style="margin-top:26px">
+        <a class="btn ghost" href="https://github.com/qwert2813434-ctrl/ALIGNED">Read the spec (GitHub)</a>
+      </div>
+    </div>
+    <pre class="code">{
+  <span class="k">"pages"</span>: 4,
+  <span class="k">"ratio"</span>: "4:5",
+  <span class="k">"objects"</span>: [
+    { <span class="k">"type"</span>: "image",
+      <span class="k">"spansPages"</span>: [1, 2, 3] },
+    { <span class="k">"type"</span>: "text",
+      <span class="k">"content"</span>: "Across the seam",
+      <span class="k">"vertical"</span>: true }
+  ]
+}  <span style="opacity:.5">// illustrative</span></pre>
+  </div>
+</section>
+
+<section class="block" id="download">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">Download</p>
+      <h2>Three platforms</h2>
+      <p>Every feature is free for now; the Mac and Windows versions are open source (GPL-3.0).</p>
+    </div>
+    <div class="dl-grid">
+      <div class="dl">
+        <svg class="plat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="11.5" rx="1.6"/><path d="M2 19.5h20"/></svg>
+        <h3>macOS</h3>
+        <p class="req">macOS 13 Ventura or later · Apple Silicon (M1+)</p>
+        <a class="btn primary" href="https://github.com/qwert2813434-ctrl/ALIGNED/releases/latest/download/ALIGNED-macOS-arm64.dmg">Download DMG</a>
+        <p class="note">Signed and notarized — no right-click-open workaround needed. Intel Macs are not supported.</p>
+      </div>
+      <div class="dl">
+        <svg class="plat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12.5" rx="1.6"/><path d="M9.5 21h5M12 17v4"/></svg>
+        <h3>Windows</h3>
+        <p class="req">Windows 10 or later · 64-bit (needs WebView2)</p>
+        <a class="btn ghost" href="https://github.com/qwert2813434-ctrl/ALIGNED/releases/latest/download/ALIGNED-windows-x64-setup.exe">Download installer</a>
+        <p class="note">The installer isn't code-signed yet — on first launch click "More info → Run anyway". Video pages and animation export are Mac-only for now.</p>
+      </div>
+      <div class="dl">
+        <svg class="plat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.4"/><path d="M10.5 5h3"/></svg>
+        <h3>iPhone ／ iPad<span class="badge">In review</span></h3>
+        <p class="req">iOS ／ iPadOS · native app</p>
+        <p class="note" style="margin-top:2px">Currently in App Store review — the link will appear here once it's live. Want to hear first? Email <a href="mailto:alignediosapp@gmail.com" style="color:var(--accent);text-decoration:none">alignediosapp@gmail.com</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="block-head center">
+      <p class="kicker">FAQ</p>
+      <h2>Things you might be wondering</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Is ALIGNED free?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Every feature is free for now. The Mac and Windows versions are open source under GPL-3.0; the name and logo are trademarks and not covered by it — if you fork, please rename.</p>
+      </details>
+      <details>
+        <summary>Where does my work live?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Only on your device. ALIGNED works fully offline — no account, no cloud, no telemetry. It opens files from your disk and writes them back.</p>
+      </details>
+      <details>
+        <summary>Does it run on Intel Macs?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>No. The Mac version requires Apple Silicon (M1 or newer) and macOS 13 or later.</p>
+      </details>
+      <details>
+        <summary>Windows shows a warning on install?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>The Windows installer isn't code-signed yet, so SmartScreen shows a prompt — click "More info → Run anyway". The installer matches the source published on GitHub.</p>
+      </details>
+      <details>
+        <summary>How is this different from Canva?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>ALIGNED isn't a template tool — no marketplace, no cloud, no account. It solves one specific problem: laying out, aligning and slicing images that span multiple slides — the thing every other tool makes you do with manual slicing, over and over.</p>
+      </details>
+      <details>
+        <summary>How do I report a problem?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Email <a href="mailto:alignediosapp@gmail.com" style="color:var(--accent)">alignediosapp@gmail.com</a> or open an issue on GitHub — we read and answer personally. It's a personal project maintained around client work, so support is best-effort, and we'd rather say that up front.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="page">
+  <div class="wrap">
+    <div class="foot-row">
+      <a href="https://qwert2813434-ctrl.github.io/aligned-help/en/">How to Use</a>
+      <a href="https://qwert2813434-ctrl.github.io/aligned-help/en/faq.html">Full FAQ</a>
+      <a href="https://qwert2813434-ctrl.github.io/tools/aligned-templates/">Template gallery</a>
+      <a href="https://github.com/qwert2813434-ctrl/ALIGNED">GitHub</a>
+      <a href="https://qwert2813434-ctrl.github.io/tools/">Kao's Workshop</a>
+      <a href="mailto:alignediosapp@gmail.com">alignediosapp@gmail.com</a>
+    </div>
+    <p class="foot-copy">© 2026 Armin Kao — the ALIGNED name and logo are trademarks. The Mac/Windows versions are open source under GPL-3.0.</p>
+  </div>
+</footer>
+
+<script src="../assets/site.js"></script>
+</body>
+</html>
