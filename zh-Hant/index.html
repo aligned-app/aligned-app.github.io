@@ -62,6 +62,7 @@
           下載 macOS 版
         </a>
         <a class="btn ghost" href="https://github.com/qwert2813434-ctrl/ALIGNED/releases/latest/download/ALIGNED-windows-x64-setup.exe">下載 Windows 版</a>
+        <a class="btn ghost" id="hero-ios" href="https://apps.apple.com/tw/app/id6791646266">App Store（iPhone／iPad）</a>
         <a class="btn quiet" href="https://github.com/qwert2813434-ctrl/ALIGNED">GitHub 原始碼</a>
       </div>
       <p class="cta-note">macOS 13+（Apple Silicon）・Windows 10+ 64 位元・iPhone／iPad 版已上架 App Store</p>
@@ -273,5 +274,6 @@
 </footer>
 
 <script src="../assets/site.js"></script>
+<script>if(/iPhone|iPad/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1)){var b=document.getElementById('hero-ios'),m=b.previousElementSibling.previousElementSibling;b.className='btn primary';m.className='btn ghost';b.parentNode.prepend(b)}</script>
 </body>
 </html>
