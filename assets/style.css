@@ -231,6 +231,55 @@ footer.page{border-top:1px solid var(--line);margin-top:88px;padding:36px 0 48px
 .foot-copy{margin-top:18px;font-size:12.5px;color:var(--ink-faint)}
 .foot-copy a{color:inherit}
 
+/* ── 更新與預告：版本卡滑軌 ──────────────
+   一張卡＝一個版本，卡頭一顆圖示講重點；
+   .fix＝修 bug／維護版（灰）、.soon＝預告（虛線） */
+.up-track{
+  display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch;padding:2px;
+  -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 44px),transparent);
+  mask-image:linear-gradient(90deg,#000 calc(100% - 44px),transparent);
+}
+.up-track::-webkit-scrollbar{display:none}
+.up-card{
+  flex:none;width:276px;scroll-snap-align:start;
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:16px 18px 20px;transition:transform .15s,border-color .15s;
+}
+.up-card:hover{transform:translateY(-2px);border-color:var(--accent)}
+.up-art{
+  height:110px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+  background:color-mix(in srgb,var(--accent) 9%,transparent);color:var(--accent);
+  margin-bottom:14px;
+}
+.up-art svg{width:44px;height:44px}
+.up-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.up-top .ver{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:.03em}
+.up-top .date{font-family:var(--mono);font-size:11px;color:var(--ink-faint)}
+.up-card h3{font-size:15.5px;font-weight:700;margin:0 0 8px}
+.up-card ul{margin:0;padding:0;list-style:none}
+.up-card li{position:relative;padding-left:16px;font-size:13px;color:var(--ink-dim);margin:0 0 6px;line-height:1.6}
+.up-card li::before{content:"";position:absolute;left:1px;top:10px;width:4px;height:4px;border-radius:50%;background:var(--accent)}
+.up-card.fix .up-art{background:rgba(127,127,127,.1);color:var(--ink-dim)}
+.up-card.fix .ver{color:var(--ink-dim)}
+.up-card.fix li::before{background:var(--ink-faint)}
+.up-card.soon{border-style:dashed;background:transparent}
+.up-card.soon:hover{border-color:var(--ink-faint)}
+.up-card.soon .up-art{background:transparent;border:1px dashed var(--line);color:var(--ink-faint)}
+.up-card.soon .ver,.up-card.soon .date{color:var(--ink-faint)}
+.up-card.soon li::before{background:transparent;border:1px solid var(--ink-faint);width:3px;height:3px}
+.up-ctrl{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:14px}
+.up-more{font-size:12.5px;color:var(--ink-faint);text-decoration:none}
+.up-more:hover{color:var(--ink)}
+.up-arrows{display:flex;gap:10px}
+.up-btn{
+  display:flex;align-items:center;justify-content:center;width:30px;height:30px;
+  border-radius:50%;border:1px solid var(--line);background:none;color:var(--ink-dim);
+  cursor:pointer;padding:0;
+}
+.up-btn:hover{color:var(--ink);border-color:var(--accent)}
+.up-btn svg{width:13px;height:13px}
+
 /* ── 手機（另一個版面）─────────────────── */
 @media (max-width:900px){
   .hero{padding:48px 0 16px}

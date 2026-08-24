@@ -59,6 +59,21 @@
   });
 })();
 
+// 更新滑軌：箭頭捲動（滑動本身走原生 scroll-snap）
+(function(){
+  document.querySelectorAll('.up-rail').forEach(function(rail){
+    var track = rail.querySelector('.up-track');
+    if (!track) return;
+    rail.querySelectorAll('.up-btn').forEach(function(b){
+      b.addEventListener('click', function(){
+        var c = track.firstElementChild;
+        var w = c ? c.getBoundingClientRect().width + 16 : 300;
+        track.scrollBy({left: w * (+b.dataset.dir), behavior:'smooth'});
+      });
+    });
+  });
+})();
+
 // 影片進視野才載入播放，離開就暫停（data-src 延遲載入）
 (function(){
   var vids = document.querySelectorAll('video[data-src]');
