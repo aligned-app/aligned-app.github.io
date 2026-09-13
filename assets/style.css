@@ -116,11 +116,6 @@ h1{
   border-radius:22px;overflow:hidden;border:1px solid var(--line);
   background:var(--frame);
 }
-.tablet{
-  border-radius:14px;overflow:hidden;border:1px solid var(--line);
-  background:var(--frame);margin-bottom:16px;
-}
-.tablet video{width:100%;height:auto}
 .hero-media .phone{max-width:380px;margin:0 auto}
 .media-cap{
   margin-top:10px;font-size:12px;color:var(--ink-faint);text-align:center;
@@ -302,3 +297,4 @@ footer.page{border-top:1px solid var(--line);margin-top:88px;padding:36px 0 48px
   .hero-media .phone{max-width:300px}
   h1{font-size:34px}
 }
+
