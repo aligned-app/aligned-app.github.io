@@ -73,3 +73,13 @@ html:not([data-lang="en"]) [data-en]{display:none!important}
   .fam-mark small{display:none}
   .doc td:first-child{white-space:normal;width:7em}
 }
+
+/* ALIGNVIEW 頁（2026-10-19 改版）：置中 hero＋展示片、16:9 功能卡 */
+.view-hero{padding:88px 0 8px;text-align:center}
+.view-hero .app-id{justify-content:center}
+.view-hero .lede{margin-left:auto;margin-right:auto}
+.view-hero .cta-row{justify-content:center}
+.film{max-width:1080px;margin:44px auto 0}
+.film video{display:block;width:100%;aspect-ratio:16/9;border-radius:18px;border:1px solid var(--line);background:#000}
+.card .wide{aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#000;margin-bottom:16px}
+.card .wide video{display:block;width:100%;height:100%;object-fit:cover}

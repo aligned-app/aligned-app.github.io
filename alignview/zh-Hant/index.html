@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ALIGNVIEW — 外接相機監看</title>
-<meta name="description" content="ALIGNVIEW 讓 iPad／Mac 接相機當監看螢幕：參考線、疊圖對位、場景記憶、WiFi 給 iPhone 收看，訪談時在裝置上出逐字稿。即將推出。">
+<title>ALIGNVIEW — 能自己拉參考線的相機監看</title>
+<meta name="description" content="ALIGNVIEW 把 iPad 或 Mac 接上相機，變成能自己拉參考線的監看螢幕：可移動參考線、Match Cut 疊圖對位、場景記憶，訪談時同步出逐字稿。即將推出。">
 <meta name="color-scheme" content="dark light">
-<meta property="og:title" content="ALIGNVIEW — 外接相機監看">
-<meta property="og:description" content="ALIGNVIEW 讓 iPad／Mac 接相機當監看螢幕：參考線、疊圖對位、場景記憶、WiFi 給 iPhone 收看，訪談時在裝置上出逐字稿。即將推出。">
+<meta property="og:title" content="ALIGNVIEW — 能自己拉參考線的相機監看">
+<meta property="og:description" content="ALIGNVIEW 把 iPad 或 Mac 接上相機，變成能自己拉參考線的監看螢幕：可移動參考線、Match Cut 疊圖對位、場景記憶，訪談時同步出逐字稿。即將推出。">
 <meta property="og:url" content="https://aligned-app.github.io/alignview/zh-Hant/">
 <meta property="og:image" content="https://aligned-app.github.io/media/family-og.png">
 <link rel="canonical" href="https://aligned-app.github.io/alignview/zh-Hant/">
@@ -16,7 +16,7 @@
 <link rel="alternate" hreflang="x-default" href="https://aligned-app.github.io/alignview/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0d10'/><path d='M6 8 L13 8 L13 24 L6 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M26 8 L19 8 L19 24 L26 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 <link rel="stylesheet" href="../../assets/style.css">
-<link rel="stylesheet" href="../../assets/family.css">
+<link rel="stylesheet" href="../../assets/family.css?v=20261019b">
 </head>
 <body>
 
@@ -50,51 +50,74 @@
   </div>
 </header>
 
-<div class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="app-id"><img src="../../assets/family/alignview.png" alt="" width="56" height="56"><span>ALIGNVIEW</span><span class="status">即將推出</span></div>
-      <h1>接上相機，<br>對好構圖。</h1>
-      <p class="lede">ALIGNVIEW 把 iPad 或 Mac 變成相機的監看螢幕。疊上參考線與上一場的照片，隔天回到同一個機位；拍訪談時，旁邊同步出逐字稿。</p>
-      <div class="cta-row">
-        <a class="btn ghost" href="../privacy.html">隱私權政策</a>
-      </div>
-      <p class="cta-note">iPad（USB-C、iPadOS 17 以上）／Mac・iPhone 透過 WiFi 收看・尚未上架</p>
+<div class="hero view-hero">
+  <div class="wrap">
+    <div class="app-id"><img src="../../assets/family/alignview.png" alt="" width="56" height="56"><span>ALIGNVIEW</span><span class="status">即將推出</span></div>
+    <h1>不只九宮格。</h1>
+    <p class="lede">ALIGNVIEW 把 iPad 或 Mac 接上相機，變成能自己拉參考線的監看螢幕。對到眼睛、對到地平線、對回上一顆鏡頭；拍訪談時，旁邊同步出逐字稿。</p>
+    <div class="cta-row">
+      <a class="btn quiet" href="../support.html">支援與常見問題</a>
+      <a class="btn ghost" href="../privacy.html">隱私權政策</a>
     </div>
-    <div class="hero-icon"><img src="../../assets/family/alignview.png" alt="ALIGNVIEW icon" width="256" height="256"></div>
+    <p class="cta-note">iPad（USB-C、iPadOS 17 以上）／Mac・尚未上架</p>
+    <div class="film">
+      <video src="../../media/alignview-film.mp4" poster="../../media/alignview-film-poster.jpg" controls playsinline preload="metadata"></video>
+      <p class="media-cap">30 秒看完 ALIGNVIEW。介面照 App 的實際畫面重繪，相機畫面是作者自己的口播原片。</p>
+    </div>
   </div>
 </div>
-
-<section class="block">
-  <div class="wrap">
-    <div class="block-head">
-      <p class="kicker">怎麼接</p>
-      <h2>三種看畫面的方式</h2>
-    </div>
-    <div class="spec-grid">
-      <div class="spec"><b>iPad 接相機</b><span>USB-C 接相機，相機切到 USB 串流（UVC）模式。實測過 Sony a7C II。</span></div>
-      <div class="spec"><b>Mac 接相機</b><span>同樣走 USB 串流（UVC）。也可以接 UVC 規格的 HDMI 採集卡。</span></div>
-      <div class="spec"><b>iPhone 收看</b><span>iPhone 不支援外接 USB 相機，改用 WiFi：iPad 或 Mac 打開「分享畫面到 WiFi」，同一個網路下的 iPhone 就能連上。</span></div>
-    </div>
-  </div>
-</section>
 
 <section class="block" id="features">
   <div class="wrap">
     <div class="block-head">
       <p class="kicker">功能</p>
-      <h2>畫面上能疊什麼</h2>
-      <p>畫面內不放按鈕，工具都在邊條上。以下照 App 內的說明頁整理；實際操作錄影整理中。</p>
+      <h2>九宮格之外的三件事</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="card">
+        <div class="wide"><video muted loop playsinline preload="none" data-src="../../media/alignview-guides.mp4"></video></div>
+        <h3>可移動的參考線</h3>
+        <p>從控制條把橫線、直線、斜線拖進畫面，對到眼睛、地平線或任何你要的位置。也有二分、三分、黃金分割、對角線、斐波那契螺旋、安全框、中心十字與圓形。</p>
+      </div>
+      <div class="card">
+        <div class="wide"><video muted loop playsinline preload="none" data-src="../../media/alignview-matchcut.mp4"></video></div>
+        <h3>Match Cut 疊圖</h3>
+        <p>上一顆鏡頭的照片半透明疊在畫面上，構圖對上再開拍。按住眼睛鈕暫時隱藏比對；場景記憶 8 個槽，參考線、疊圖、塗鴉一起存，隔天回到同一個機位。</p>
+      </div>
+      <div class="card">
+        <div class="wide"><video muted loop playsinline preload="none" data-src="../../media/alignview-transcript.mp4"></video></div>
+        <h3>訪談逐字稿</h3>
+        <p>收音即時出文字，每段結束後由內建模型在裝置上精修，可標記、加註記、存檔；精修沒成功時保留即時辨識的文字。目前辨識中文，輸出繁體中文。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">怎麼接</p>
+      <h2>一條線接上相機</h2>
     </div>
     <div class="spec-grid">
-      <div class="spec"><b>參考線</b><span>二分、三分、黃金分割、對角線、費波那契螺旋、安全框、中心十字、圓形，也可以拖進自訂的線。</span></div>
+      <div class="spec"><b>iPad 接相機</b><span>USB-C 接相機，相機切到 USB 串流（UVC）模式。實測過 Sony a7C II。</span></div>
+      <div class="spec"><b>Mac 接相機</b><span>同樣走 USB 串流（UVC）。也可以接 UVC 規格的 HDMI 採集卡。</span></div>
+    </div>
+    <p class="fam-note" style="text-align:left;margin:18px 0 0;max-width:none">iPhone 不能直接接相機，請看下面的常見問題。</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">其他</p>
+      <h2>還有這些</h2>
+    </div>
+    <div class="spec-grid">
       <div class="spec"><b>比例參考</b><span>9:16、4:5、2.39:1 等框線，可加外部遮罩。</span></div>
-      <div class="spec"><b>疊圖對位</b><span>選一張照片半透明疊在畫面上，滑桿調透明度，按住眼睛鈕暫時隱藏比對。</span></div>
-      <div class="spec"><b>場景記憶</b><span>8 個槽，參考線、疊圖、塗鴉一起存。隔天回同一個機位時載入即可。</span></div>
       <div class="spec"><b>塗鴉</b><span>在畫面上畫線標記，可上一步或全清。</span></div>
       <div class="spec"><b>截圖</b><span>把乾淨的畫面（不含參考線與塗鴉）存進相簿。</span></div>
-      <div class="spec"><b>旁路與純淨模式</b><span>一鍵關掉所有輔助層；往上滑只留畫面。</span></div>
-      <div class="spec"><b>訪談逐字稿</b><span>收音即時出文字，每段結束再精修一次。可標記、加註記、存檔。存檔的逐字稿由內建模型在裝置上產生，離線也能用；即時預覽優先用本機辨識，不支援的裝置會改用 Apple 線上服務。</span></div>
+      <div class="spec"><b>旁路與純淨模式</b><span>一鍵關掉所有輔助層；往上滑隱藏控制介面，保留參考線。</span></div>
     </div>
   </div>
 </section>
@@ -103,8 +126,35 @@
   <div class="wrap">
     <div class="block-head">
       <p class="kicker">隱私</p>
-      <h2>畫面和逐字稿都留在裝置上</h2>
-      <p>截圖與逐字稿存在你的裝置上。開啟 WiFi 橋接時，畫面只傳給同一個區域網路裡的裝置；部分裝置的即時語音預覽會把音訊送到 Apple。沒有帳號、沒有追蹤。 <a href="../privacy.html" style="color:var(--accent)">隱私權政策</a></p>
+      <h2>沒有帳號，也沒有追蹤</h2>
+      <p>截圖與逐字稿存在你的裝置上。開啟 WiFi 橋接時，畫面會傳給同一個區域網路裡連上來的裝置；橋接目前沒有配對密碼與加密，請在信任的網路使用。部分裝置的即時語音預覽會把音訊送到 Apple。 <a href="../privacy.html" style="color:var(--accent)">隱私權政策</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">常見問題</p>
+      <h2>接相機前想知道的</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>支援哪些相機？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>能輸出 USB 串流（UVC）的相機，或 UVC 規格的 HDMI 採集卡。目前實測過 Sony a7C II。</p>
+      </details>
+      <details>
+        <summary>iPhone 可以直接接相機嗎？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>不行。iPhone 不支援外接 USB 相機，相機也不會直接把畫面用 WiFi 傳給 ALIGNVIEW。要先用 iPad 或 Mac 接相機，打開「分享畫面到 WiFi」；再在同一個 WiFi 網路下的 iPhone 開 ALIGNVIEW，允許區域網路權限，從「訊號源」選那台 iPad 或 Mac。</p>
+      </details>
+      <details>
+        <summary>沒有網際網路能用嗎？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>能。USB 監看、參考線、疊圖都不需要網際網路，逐字稿的精修也在裝置上完成。例外有兩個：iPhone 收看要跟分享的 iPad／Mac 在同一個區域網路；不支援本機語音辨識的裝置，即時預覽會改用 Apple 的線上服務。</p>
+      </details>
+      <details>
+        <summary>相機要怎麼設定？<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>把相機的 USB 連線模式切到 USB 串流（UVC），再用 USB-C 線接上 iPad 或 Mac。不同品牌的選單名稱不一樣，請查相機說明書的「USB 串流」或「網路攝影機」。</p>
+      </details>
     </div>
   </div>
 </section>
@@ -113,6 +163,7 @@
   <div class="wrap">
     <div class="foot-row">
       <a href="../../?lang=zh-Hant">ALIGN 家族</a>
+      <a href="../support.html">支援</a>
       <a href="../privacy.html">隱私權政策</a>
       <a href="https://tools.arminkao.com/">小高工具間</a>
       <a href="mailto:alignediosapp@gmail.com">alignediosapp@gmail.com</a>

@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ALIGNVIEW — a monitor for your camera</title>
-<meta name="description" content="ALIGNVIEW turns an iPad or Mac into a camera monitor: guides, onion-skin overlay, scene memory, Wi-Fi viewing on iPhone, and an on-device interview transcript. Coming soon.">
+<title>ALIGNVIEW — a camera monitor with guides you can move</title>
+<meta name="description" content="ALIGNVIEW turns an iPad or Mac into a camera monitor with guides you place yourself: movable guides, match-cut onion skin, scene memory, and a live interview transcript. Coming soon.">
 <meta name="color-scheme" content="dark light">
-<meta property="og:title" content="ALIGNVIEW — a monitor for your camera">
-<meta property="og:description" content="ALIGNVIEW turns an iPad or Mac into a camera monitor: guides, onion-skin overlay, scene memory, Wi-Fi viewing on iPhone, and an on-device interview transcript. Coming soon.">
+<meta property="og:title" content="ALIGNVIEW — a camera monitor with guides you can move">
+<meta property="og:description" content="ALIGNVIEW turns an iPad or Mac into a camera monitor with guides you place yourself: movable guides, match-cut onion skin, scene memory, and a live interview transcript. Coming soon.">
 <meta property="og:url" content="https://aligned-app.github.io/alignview/en/">
 <meta property="og:image" content="https://aligned-app.github.io/media/family-og.png">
 <link rel="canonical" href="https://aligned-app.github.io/alignview/en/">
@@ -16,7 +16,7 @@
 <link rel="alternate" hreflang="x-default" href="https://aligned-app.github.io/alignview/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0d10'/><path d='M6 8 L13 8 L13 24 L6 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M26 8 L19 8 L19 24 L26 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 <link rel="stylesheet" href="../../assets/style.css">
-<link rel="stylesheet" href="../../assets/family.css">
+<link rel="stylesheet" href="../../assets/family.css?v=20261019b">
 </head>
 <body>
 
@@ -50,51 +50,74 @@
   </div>
 </header>
 
-<div class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="app-id"><img src="../../assets/family/alignview.png" alt="" width="56" height="56"><span>ALIGNVIEW</span><span class="status">Coming soon</span></div>
-      <h1>Plug in the camera.<br>Line up the frame.</h1>
-      <p class="lede">ALIGNVIEW turns an iPad or Mac into a monitor for your camera. Overlay guides and a photo from the last session to get back to the same setup the next day; during interviews, a transcript runs alongside.</p>
-      <div class="cta-row">
-        <a class="btn ghost" href="../privacy.html#en">Privacy policy</a>
-      </div>
-      <p class="cta-note">iPad (USB-C, iPadOS 17 or later) / Mac · iPhone over Wi-Fi · Not yet on the App Store</p>
+<div class="hero view-hero">
+  <div class="wrap">
+    <div class="app-id"><img src="../../assets/family/alignview.png" alt="" width="56" height="56"><span>ALIGNVIEW</span><span class="status">Coming soon</span></div>
+    <h1>Beyond the grid.</h1>
+    <p class="lede">ALIGNVIEW turns an iPad or Mac into a monitor for your camera, with guides you place yourself. Line up the eyes, the horizon, or the last shot; during interviews, a transcript runs alongside.</p>
+    <div class="cta-row">
+      <a class="btn quiet" href="../support.html#en">Support & FAQ</a>
+      <a class="btn ghost" href="../privacy.html#en">Privacy policy</a>
     </div>
-    <div class="hero-icon"><img src="../../assets/family/alignview.png" alt="ALIGNVIEW icon" width="256" height="256"></div>
+    <p class="cta-note">iPad (USB-C, iPadOS 17 or later) / Mac · Interface in Traditional Chinese for now · Not yet on the App Store</p>
+    <div class="film">
+      <video src="../../media/alignview-film.mp4" poster="../../media/alignview-film-poster.jpg" controls playsinline preload="metadata"></video>
+      <p class="media-cap">ALIGNVIEW in 30 seconds. The interface is redrawn from the real app; the camera feed is the author's own footage.</p>
+    </div>
   </div>
 </div>
-
-<section class="block">
-  <div class="wrap">
-    <div class="block-head">
-      <p class="kicker">Connecting</p>
-      <h2>Three ways to see the picture</h2>
-    </div>
-    <div class="spec-grid">
-      <div class="spec"><b>iPad + camera</b><span>Connect the camera over USB-C and switch it to USB streaming (UVC) mode. Tested with a Sony a7C II.</span></div>
-      <div class="spec"><b>Mac + camera</b><span>Same USB streaming (UVC). A UVC-compatible HDMI capture card also works as a source.</span></div>
-      <div class="spec"><b>iPhone viewing</b><span>iPhone doesn't support external USB cameras, so it watches over Wi-Fi: turn on “Share to Wi-Fi” on the iPad or Mac, and an iPhone on the same network can connect.</span></div>
-    </div>
-  </div>
-</section>
 
 <section class="block" id="features">
   <div class="wrap">
     <div class="block-head">
       <p class="kicker">Features</p>
-      <h2>What you can overlay</h2>
-      <p>No buttons over the picture; the tools live in the side bar. This list follows the in-app help page; screen recordings are on the way.</p>
+      <h2>Three things beyond the grid</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="card">
+        <div class="wide"><video muted loop playsinline preload="none" data-src="../../media/alignview-guides.mp4"></video></div>
+        <h3>Guides that move</h3>
+        <p>Drag horizontal, vertical and diagonal lines in from the control bar and park them on the eyes, the horizon, or anything else. Halves, thirds, golden section, diagonals, Fibonacci spiral, safe area, center cross and circles are built in too.</p>
+      </div>
+      <div class="card">
+        <div class="wide"><video muted loop playsinline preload="none" data-src="../../media/alignview-matchcut.mp4"></video></div>
+        <h3>Match-cut onion skin</h3>
+        <p>Overlay a semi-transparent photo of the previous shot on the live view and line up the frame before you roll. Hold the eye button to hide it for a quick compare; eight scene slots store guides, overlay and doodles together, so you can get back to the same setup the next day.</p>
+      </div>
+      <div class="card">
+        <div class="wide"><video muted loop playsinline preload="none" data-src="../../media/alignview-transcript.mp4"></video></div>
+        <h3>Interview transcript</h3>
+        <p>Text appears live as people talk; after each segment the built-in on-device model refines it, and if refinement fails the live text is kept. Flag, annotate and save. Currently transcribes Mandarin Chinese only, output in Traditional Chinese.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">Connecting</p>
+      <h2>One cable to the camera</h2>
     </div>
     <div class="spec-grid">
-      <div class="spec"><b>Guides</b><span>Halves, thirds, golden section, diagonals, Fibonacci spiral, safe area, center cross, circles, and lines you drag in yourself.</span></div>
+      <div class="spec"><b>iPad + camera</b><span>Connect the camera over USB-C and switch it to USB streaming (UVC) mode. Tested with a Sony a7C II.</span></div>
+      <div class="spec"><b>Mac + camera</b><span>Same USB streaming (UVC). A UVC-compatible HDMI capture card also works as a source.</span></div>
+    </div>
+    <p class="fam-note" style="text-align:left;margin:18px 0 0;max-width:none">iPhone can't connect to the camera directly — see the FAQ below.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">More</p>
+      <h2>Also in the app</h2>
+    </div>
+    <div class="spec-grid">
       <div class="spec"><b>Aspect frames</b><span>9:16, 4:5, 2.39:1 and more, with an optional outside mask.</span></div>
-      <div class="spec"><b>Onion skin</b><span>Lay a photo semi-transparent over the picture, set the opacity, and hold the eye button to hide it for a quick compare.</span></div>
-      <div class="spec"><b>Scene memory</b><span>Eight slots store guides, overlay and doodles together. Load one to get back to the same camera position.</span></div>
       <div class="spec"><b>Doodle</b><span>Draw marks on the picture; undo or clear.</span></div>
       <div class="spec"><b>Snapshot</b><span>Save the clean picture (no guides or doodles) to Photos.</span></div>
-      <div class="spec"><b>Bypass & clean view</b><span>Turn every overlay off in one tap; swipe up to show only the picture.</span></div>
-      <div class="spec"><b>Interview transcript</b><span>Text appears live as people talk and is refined after each segment. Flag, annotate and save. Saved transcripts are made on-device by the built-in model and work offline; the live preview uses on-device recognition when available and Apple’s online service otherwise.</span></div>
+      <div class="spec"><b>Bypass & clean view</b><span>Turn every overlay off in one tap; swipe up to hide the controls while keeping the guides.</span></div>
     </div>
   </div>
 </section>
@@ -103,8 +126,35 @@
   <div class="wrap">
     <div class="block-head">
       <p class="kicker">Privacy</p>
-      <h2>The picture and transcript stay on your device</h2>
-      <p>Snapshots and transcripts are stored on your device. With the WiFi bridge on, the picture goes only to devices on your local network; on some devices the live speech preview sends audio to Apple. No account, no tracking. <a href="../privacy.html#en" style="color:var(--accent)">Privacy policy</a></p>
+      <h2>No account. No tracking.</h2>
+      <p>Snapshots and transcripts are stored on your device. With the Wi-Fi bridge on, the picture is sent to devices that connect from your local network; the bridge has no pairing code or encryption yet, so use it on a network you trust. On some devices the live speech preview sends audio to Apple. <a href="../privacy.html#en" style="color:var(--accent)">Privacy policy</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">FAQ</p>
+      <h2>Before you plug in</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Which cameras work?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Any camera that can output USB streaming (UVC), or a UVC-compatible HDMI capture card. Tested so far with a Sony a7C II.</p>
+      </details>
+      <details>
+        <summary>Can an iPhone connect to the camera directly?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>No. iPhone doesn't support external USB cameras, and the camera doesn't send its picture to ALIGNVIEW over Wi-Fi. Connect the camera to an iPad or Mac first and turn on “分享畫面到 WiFi” (Share to Wi-Fi). Then open ALIGNVIEW on an iPhone on the same Wi-Fi network, allow local network access, and pick that iPad or Mac under “訊號源” (Source).</p>
+      </details>
+      <details>
+        <summary>Does it work without internet?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Yes. USB monitoring, guides and onion skin need no internet, and transcript refinement runs on the device. Two exceptions: iPhone viewing needs the same local network as the sharing iPad or Mac, and on devices without on-device speech recognition the live preview uses Apple's online service.</p>
+      </details>
+      <details>
+        <summary>How do I set up the camera?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <p>Switch the camera's USB connection mode to USB streaming (UVC), then connect it to the iPad or Mac with a USB-C cable. Menu names differ by brand; look for “USB streaming” or “webcam” in your camera's manual.</p>
+      </details>
     </div>
   </div>
 </section>
@@ -113,6 +163,7 @@
   <div class="wrap">
     <div class="foot-row">
       <a href="../../?lang=en">The ALIGN family</a>
+      <a href="../support.html#en">Support</a>
       <a href="../privacy.html#en">Privacy policy</a>
       <a href="https://tools.arminkao.com/">Kao's Workshop</a>
       <a href="mailto:alignediosapp@gmail.com">alignediosapp@gmail.com</a>
