@@ -298,3 +298,9 @@ footer.page{border-top:1px solid var(--line);margin-top:88px;padding:36px 0 48px
   h1{font-size:34px}
 }
 
+
+/* 家族麵包屑（ALIGNED 頁頭左上，2026-10-19）：點了回 ALIGN 家族首頁，手機也看得到 */
+.fam-crumb{display:inline-flex;align-items:center;gap:7px;flex:none;color:var(--ink-faint);text-decoration:none;font-weight:700;letter-spacing:.06em;font-size:13px}
+.fam-crumb svg{width:16px;height:16px;flex:none}
+.fam-crumb:hover{color:var(--accent)}
+.fam-sep{flex:none;color:var(--ink-faint);opacity:.6;margin:0 10px}
