@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALIGNVIEW — 外接相機監看</title>
+<meta name="description" content="ALIGNVIEW 讓 iPad／Mac 接相機當監看螢幕：參考線、疊圖對位、場景記憶、WiFi 給 iPhone 收看，訪談時離線出逐字稿。即將推出。">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="ALIGNVIEW — 外接相機監看">
+<meta property="og:description" content="ALIGNVIEW 讓 iPad／Mac 接相機當監看螢幕：參考線、疊圖對位、場景記憶、WiFi 給 iPhone 收看，訪談時離線出逐字稿。即將推出。">
+<meta property="og:url" content="https://aligned-app.github.io/alignview/zh-Hant/">
+<meta property="og:image" content="https://aligned-app.github.io/media/family-og.png">
+<link rel="canonical" href="https://aligned-app.github.io/alignview/zh-Hant/">
+<link rel="alternate" hreflang="zh-Hant" href="https://aligned-app.github.io/alignview/zh-Hant/">
+<link rel="alternate" hreflang="en" href="https://aligned-app.github.io/alignview/en/">
+<link rel="alternate" hreflang="x-default" href="https://aligned-app.github.io/alignview/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0d10'/><path d='M6 8 L13 8 L13 24 L6 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M26 8 L19 8 L19 24 L26 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/family.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="wordmark fam-mark" href="../../?lang=zh-Hant">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5H10v15H3.5M20.5 4.5H14v15h6.5"/></svg>
+      ALIGN<small>家族</small>
+    </a>
+    <nav class="main">
+      <a href="../../zh-Hant/">ALIGNED</a>
+      <a href="../../aligncam/zh-Hant/">ALIGNCAM</a>
+      <a class="on" href="../../alignview/zh-Hant/">ALIGNVIEW</a>
+    </nav>
+    <div class="top-spacer"></div>
+    <details class="lang">
+      <summary>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9S14.6 18.4 12 21c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3Z"/></svg>
+        繁體中文
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <nav class="lang-menu">
+        <a class="current" href="../zh-Hant/">繁體中文</a>
+        <a href="../en/">English</a>
+      </nav>
+    </details>
+    <button class="iconbtn" id="themeToggle" aria-label="切換深淺色">
+      <svg class="moon-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+      <svg class="sun-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="app-id"><img src="../../assets/family/alignview.png" alt="" width="56" height="56"><span>ALIGNVIEW</span><span class="status">即將推出</span></div>
+      <h1>接上相機，<br>對好構圖。</h1>
+      <p class="lede">ALIGNVIEW 把 iPad 或 Mac 變成相機的監看螢幕。疊上參考線與上一場的照片，隔天回到同一個機位；拍訪談時，旁邊同步出逐字稿。</p>
+      <div class="cta-row">
+        <a class="btn ghost" href="../privacy.html">隱私權政策</a>
+      </div>
+      <p class="cta-note">iPad（USB-C、iPadOS 17 以上）／Mac・iPhone 透過 WiFi 收看・尚未上架</p>
+    </div>
+    <div class="hero-icon"><img src="../../assets/family/alignview.png" alt="ALIGNVIEW icon" width="256" height="256"></div>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">怎麼接</p>
+      <h2>三種看畫面的方式</h2>
+    </div>
+    <div class="spec-grid">
+      <div class="spec"><b>iPad 接相機</b><span>USB-C 接相機，相機切到 USB 串流（UVC）模式。實測過 Sony a7C II。</span></div>
+      <div class="spec"><b>Mac 接相機</b><span>同樣走 USB 串流（UVC）。也可以接 UVC 規格的 HDMI 採集卡。</span></div>
+      <div class="spec"><b>iPhone 收看</b><span>iPhone 不支援外接 USB 相機，改用 WiFi：iPad 或 Mac 打開「分享畫面到 WiFi」，同一個網路下的 iPhone 就能連上。</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="features">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">功能</p>
+      <h2>畫面上能疊什麼</h2>
+      <p>畫面內不放按鈕，工具都在邊條上。以下照 App 內的說明頁整理；實際操作錄影整理中。</p>
+    </div>
+    <div class="spec-grid">
+      <div class="spec"><b>參考線</b><span>二分、三分、黃金分割、對角線、斐波螺旋、安全框、中心十字、圓形，也可以拖進自訂的線。</span></div>
+      <div class="spec"><b>比例參考</b><span>9:16、4:5、2.39:1 等框線，可加外部遮罩。</span></div>
+      <div class="spec"><b>疊圖對位</b><span>選一張照片半透明疊在畫面上，滑桿調透明度，按住眼睛鈕暫時隱藏比對。</span></div>
+      <div class="spec"><b>場景記憶</b><span>8 個槽，參考線、疊圖、塗鴉一起存。隔天回同一個機位時載入即可。</span></div>
+      <div class="spec"><b>塗鴉</b><span>在畫面上畫線標記，可上一步或全清。</span></div>
+      <div class="spec"><b>截圖</b><span>把乾淨的畫面（不含參考線與塗鴉）存進相簿。</span></div>
+      <div class="spec"><b>旁路與純淨模式</b><span>一鍵關掉所有輔助層；往上滑只留畫面。</span></div>
+      <div class="spec"><b>訪談逐字稿</b><span>收音即時出文字，每段結束再精修一次。可標記、加註記、存檔。語音模型內建在 App 裡，離線也能用。</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">隱私</p>
+      <h2>畫面和逐字稿都留在裝置上</h2>
+      <p>影像、截圖與逐字稿只存在你的裝置上，不會上傳。沒有帳號、沒有追蹤。 <a href="../privacy.html" style="color:var(--accent)">隱私權政策</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="page">
+  <div class="wrap">
+    <div class="foot-row">
+      <a href="../../?lang=zh-Hant">ALIGN 家族</a>
+      <a href="../privacy.html">隱私權政策</a>
+      <a href="https://tools.arminkao.com/">小高工具間</a>
+      <a href="mailto:alignediosapp@gmail.com">alignediosapp@gmail.com</a>
+    </div>
+    <p class="foot-copy">© 2026 小高 Armin Kao — ALIGNVIEW 名稱與 logo 為商標。</p>
+  </div>
+</footer>
+
+<script src="../../assets/site.js"></script>
+</body>
+</html>

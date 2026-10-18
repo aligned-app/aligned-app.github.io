@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALIGNVIEW</title>
+<script>
+(function(){
+  var saved = null; try { saved = localStorage.getItem('align-lang'); } catch(e){}
+  var langs = navigator.languages || [navigator.language || 'en'];
+  var zh = saved ? saved === 'zh' : langs.some(function(l){ return /^zh/i.test(l); });
+  location.replace(zh ? 'zh-Hant/' : 'en/');
+})();
+</script>
+<meta http-equiv="refresh" content="1;url=zh-Hant/">
+<style>
+body{margin:0;background:#0d0d10;color:#f2f1ee;font-family:-apple-system,"PingFang TC",sans-serif;
+display:flex;min-height:100vh;align-items:center;justify-content:center}
+a{color:#ff4d84;text-decoration:none;margin:0 10px}
+</style>
+</head>
+<body>
+<noscript><p><a href="zh-Hant/">繁體中文</a>|<a href="en/">English</a></p></noscript>
+</body>
+</html>

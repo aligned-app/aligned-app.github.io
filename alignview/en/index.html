@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALIGNVIEW — a monitor for your camera</title>
+<meta name="description" content="ALIGNVIEW turns an iPad or Mac into a camera monitor: guides, onion-skin overlay, scene memory, Wi-Fi viewing on iPhone, and an offline interview transcript. Coming soon.">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="ALIGNVIEW — a monitor for your camera">
+<meta property="og:description" content="ALIGNVIEW turns an iPad or Mac into a camera monitor: guides, onion-skin overlay, scene memory, Wi-Fi viewing on iPhone, and an offline interview transcript. Coming soon.">
+<meta property="og:url" content="https://aligned-app.github.io/alignview/en/">
+<meta property="og:image" content="https://aligned-app.github.io/media/family-og.png">
+<link rel="canonical" href="https://aligned-app.github.io/alignview/en/">
+<link rel="alternate" hreflang="zh-Hant" href="https://aligned-app.github.io/alignview/zh-Hant/">
+<link rel="alternate" hreflang="en" href="https://aligned-app.github.io/alignview/en/">
+<link rel="alternate" hreflang="x-default" href="https://aligned-app.github.io/alignview/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0d10'/><path d='M6 8 L13 8 L13 24 L6 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M26 8 L19 8 L19 24 L26 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/family.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="wordmark fam-mark" href="../../?lang=en">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5H10v15H3.5M20.5 4.5H14v15h6.5"/></svg>
+      ALIGN<small>family</small>
+    </a>
+    <nav class="main">
+      <a href="../../en/">ALIGNED</a>
+      <a href="../../aligncam/en/">ALIGNCAM</a>
+      <a class="on" href="../../alignview/en/">ALIGNVIEW</a>
+    </nav>
+    <div class="top-spacer"></div>
+    <details class="lang">
+      <summary>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9S14.6 18.4 12 21c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3Z"/></svg>
+        English
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <nav class="lang-menu">
+        <a href="../zh-Hant/">繁體中文</a>
+        <a class="current" href="../en/">English</a>
+      </nav>
+    </details>
+    <button class="iconbtn" id="themeToggle" aria-label="Toggle theme">
+      <svg class="moon-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+      <svg class="sun-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="app-id"><img src="../../assets/family/alignview.png" alt="" width="56" height="56"><span>ALIGNVIEW</span><span class="status">Coming soon</span></div>
+      <h1>Plug in the camera.<br>Line up the frame.</h1>
+      <p class="lede">ALIGNVIEW turns an iPad or Mac into a monitor for your camera. Overlay guides and a photo from the last session to get back to the same setup the next day; during interviews, a transcript runs alongside.</p>
+      <div class="cta-row">
+        <a class="btn ghost" href="../privacy.html#en">Privacy policy</a>
+      </div>
+      <p class="cta-note">iPad (USB-C, iPadOS 17 or later) / Mac · iPhone over Wi-Fi · Not yet on the App Store</p>
+    </div>
+    <div class="hero-icon"><img src="../../assets/family/alignview.png" alt="ALIGNVIEW icon" width="256" height="256"></div>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">Connecting</p>
+      <h2>Three ways to see the picture</h2>
+    </div>
+    <div class="spec-grid">
+      <div class="spec"><b>iPad + camera</b><span>Connect the camera over USB-C and switch it to USB streaming (UVC) mode. Tested with a Sony a7C II.</span></div>
+      <div class="spec"><b>Mac + camera</b><span>Same USB streaming (UVC). A UVC-compatible HDMI capture card also works as a source.</span></div>
+      <div class="spec"><b>iPhone viewing</b><span>iPhone doesn't support external USB cameras, so it watches over Wi-Fi: turn on “Share to Wi-Fi” on the iPad or Mac, and an iPhone on the same network can connect.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="features">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">Features</p>
+      <h2>What you can overlay</h2>
+      <p>No buttons over the picture; the tools live in the side bar. This list follows the in-app help page; screen recordings are on the way.</p>
+    </div>
+    <div class="spec-grid">
+      <div class="spec"><b>Guides</b><span>Halves, thirds, golden section, diagonals, Fibonacci spiral, safe area, center cross, circles, and lines you drag in yourself.</span></div>
+      <div class="spec"><b>Aspect frames</b><span>9:16, 4:5, 2.39:1 and more, with an optional outside mask.</span></div>
+      <div class="spec"><b>Onion skin</b><span>Lay a photo semi-transparent over the picture, set the opacity, and hold the eye button to hide it for a quick compare.</span></div>
+      <div class="spec"><b>Scene memory</b><span>Eight slots store guides, overlay and doodles together. Load one to get back to the same camera position.</span></div>
+      <div class="spec"><b>Doodle</b><span>Draw marks on the picture; undo or clear.</span></div>
+      <div class="spec"><b>Snapshot</b><span>Save the clean picture (no guides or doodles) to Photos.</span></div>
+      <div class="spec"><b>Bypass & clean view</b><span>Turn every overlay off in one tap; swipe up to show only the picture.</span></div>
+      <div class="spec"><b>Interview transcript</b><span>Text appears live as people talk and is refined after each segment. Flag, annotate and save. The speech model is built into the app and works offline.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="block-head">
+      <p class="kicker">Privacy</p>
+      <h2>The picture and transcript stay on your device</h2>
+      <p>Video, snapshots and transcripts are stored only on your device and never uploaded. No account, no tracking. <a href="../privacy.html#en" style="color:var(--accent)">Privacy policy</a></p>
+    </div>
+  </div>
+</section>
+
+<footer class="page">
+  <div class="wrap">
+    <div class="foot-row">
+      <a href="../../?lang=en">The ALIGN family</a>
+      <a href="../privacy.html#en">Privacy policy</a>
+      <a href="https://tools.arminkao.com/">Kao's Workshop</a>
+      <a href="mailto:alignediosapp@gmail.com">alignediosapp@gmail.com</a>
+    </div>
+    <p class="foot-copy">© 2026 Armin Kao — the ALIGNVIEW name and logo are trademarks.</p>
+  </div>
+</footer>
+
+<script src="../../assets/site.js"></script>
+</body>
+</html>

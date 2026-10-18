@@ -3,27 +3,150 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ALIGNED</title>
-<link rel="alternate" hreflang="zh-Hant" href="https://aligned-app.github.io/zh-Hant/">
-<link rel="alternate" hreflang="en" href="https://aligned-app.github.io/en/">
-<link rel="alternate" hreflang="x-default" href="https://aligned-app.github.io/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0d10'/><path d='M13 8 L9 8 L9 24 L13 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M19 8 L23 8 L23 24 L19 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<title>ALIGN 家族 — ALIGNED、ALIGNCAM、ALIGNVIEW</title>
+<meta name="description" content="小高做的三個 App，都在處理同一件事：把東西對齊。ALIGNED 排 Instagram 多頁輪播、ALIGNCAM 對齊重拍、ALIGNVIEW 外接相機監看。">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="ALIGN 家族">
+<meta property="og:description" content="ALIGNED、ALIGNCAM、ALIGNVIEW——三個為「對齊」做的 App。">
+<meta property="og:url" content="https://aligned-app.github.io/">
+<meta property="og:image" content="https://aligned-app.github.io/media/family-og.png">
+<link rel="canonical" href="https://aligned-app.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d0d10'/><path d='M6 8 L13 8 L13 24 L6 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M26 8 L19 8 L19 24 L26 24' stroke='%23ff4d84' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 <script>
-// 依瀏覽器語言分流：中文 → 繁中版，其餘 → 英文版
+// 語言：?lang= ＞ 上次選的 ＞ 瀏覽器語言（中文→繁中，其餘→英文）。
+// 舊版根網址是「依瀏覽器語言轉去 zh-Hant/ 或 en/」，這裡保留同樣的判斷，只是改成同頁切換。
 (function(){
+  var q = new URLSearchParams(location.search).get('lang'), saved = null;
+  try { saved = localStorage.getItem('align-lang'); } catch(e){}
   var langs = navigator.languages || [navigator.language || 'en'];
-  var zh = langs.some(function(l){ return /^zh/i.test(l); });
-  location.replace(zh ? 'zh-Hant/' : 'en/');
+  var pick = q ? (/^zh/i.test(q) ? 'zh' : 'en')
+           : saved ? saved
+           : (langs.some(function(l){ return /^zh/i.test(l); }) ? 'zh' : 'en');
+  if (q) { try { localStorage.setItem('align-lang', pick); } catch(e){} }
+  var h = document.documentElement;
+  h.dataset.lang = pick; h.lang = pick === 'en' ? 'en' : 'zh-Hant';
+  if (pick === 'en') document.title = 'The ALIGN family — ALIGNED, ALIGNCAM, ALIGNVIEW';
 })();
 </script>
-<meta http-equiv="refresh" content="1;url=zh-Hant/">
-<style>
-body{margin:0;background:#0d0d10;color:#f2f1ee;font-family:-apple-system,"PingFang TC",sans-serif;
-display:flex;min-height:100vh;align-items:center;justify-content:center}
-a{color:#ff4d84;text-decoration:none;margin:0 10px}
-</style>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/family.css">
 </head>
 <body>
-<noscript><p><a href="zh-Hant/">繁體中文</a>|<a href="en/">English</a></p></noscript>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="wordmark fam-mark" href="./">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 4.5H10v15H3.5M20.5 4.5H14v15h6.5"/></svg>
+      ALIGN<small data-zh>家族</small><small data-en>family</small>
+    </a>
+    <nav class="main">
+      <a data-zh href="zh-Hant/">ALIGNED</a><a data-en href="en/">ALIGNED</a>
+      <a data-zh href="aligncam/zh-Hant/">ALIGNCAM</a><a data-en href="aligncam/en/">ALIGNCAM</a>
+      <a data-zh href="alignview/zh-Hant/">ALIGNVIEW</a><a data-en href="alignview/en/">ALIGNVIEW</a>
+    </nav>
+    <div class="top-spacer"></div>
+    <details class="lang">
+      <summary>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9S14.6 18.4 12 21c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3Z"/></svg>
+        <span data-zh>繁體中文</span><span data-en>English</span>
+        <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <nav class="lang-menu">
+        <a href="?lang=zh-Hant" data-setlang="zh">繁體中文</a>
+        <a href="?lang=en" data-setlang="en">English</a>
+      </nav>
+    </details>
+    <button class="iconbtn" id="themeToggle" aria-label="切換深淺色 / Toggle theme">
+      <svg class="moon-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+      <svg class="sun-only" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="fam-hero">
+    <p class="kicker" data-zh>ALIGN 家族</p>
+    <p class="kicker" data-en>The ALIGN family</p>
+    <h1 data-zh>把東西對齊。</h1>
+    <h1 data-en>Lining things up.</h1>
+    <p class="lede" data-zh>小高做的三個 App，處理的都是同一件事：排版時對齊每一頁、重拍時對齊上一張、監看時對齊構圖。</p>
+    <p class="lede" data-en>Three apps by Armin Kao that all deal with one thing: aligning pages when you lay out, aligning with the last photo when you reshoot, and aligning the frame while you monitor.</p>
+  </div>
+
+  <div class="app-grid">
+    <article class="app-card">
+      <img class="app-icon" src="assets/family/align.png" alt="ALIGNED icon" width="72" height="72">
+      <h3>ALIGNED</h3>
+      <p class="what" data-zh>Instagram 多頁輪播排版。整組輪播是一條連續畫布，跨頁編排、匯出自動切片。</p>
+      <p class="what" data-en>A layout tool for Instagram carousels. The whole carousel is one continuous canvas, sliced automatically on export.</p>
+      <p class="plat" data-zh>Mac／Windows（免費開源）・iPhone／iPad</p>
+      <p class="plat" data-en>Mac / Windows (free, open source) · iPhone / iPad</p>
+      <div class="acts">
+        <a class="btn primary" data-zh href="zh-Hant/">了解 ALIGNED</a>
+        <a class="btn primary" data-en href="en/">About ALIGNED</a>
+        <span class="status live" data-zh>已上架</span><span class="status live" data-en>Available</span>
+      </div>
+    </article>
+
+    <article class="app-card">
+      <img class="app-icon" src="assets/family/aligncam.png" alt="ALIGNCAM icon" width="72" height="72">
+      <h3>ALIGNCAM</h3>
+      <p class="what" data-zh>對齊的相機。上一張半透明疊在取景上，對準了再拍；也能把一批照片串成定格影片。</p>
+      <p class="what" data-en>A camera for lining up. The last photo sits semi-transparent over the viewfinder so you can match it, and a batch of shots becomes a flipbook clip.</p>
+      <p class="plat" data-zh>iPhone（免費）</p>
+      <p class="plat" data-en>iPhone (free)</p>
+      <div class="acts">
+        <a class="btn primary" data-zh href="aligncam/zh-Hant/">了解 ALIGNCAM</a>
+        <a class="btn primary" data-en href="aligncam/en/">About ALIGNCAM</a>
+        <span class="status live" data-zh>已上架</span><span class="status live" data-en>Available</span>
+      </div>
+    </article>
+
+    <article class="app-card soon">
+      <img class="app-icon" src="assets/family/alignview.png" alt="ALIGNVIEW icon" width="72" height="72">
+      <h3>ALIGNVIEW</h3>
+      <p class="what" data-zh>外接相機監看。iPad／Mac 接相機看畫面，疊上參考線與上一場的構圖，訪談時同步出逐字稿。</p>
+      <p class="what" data-en>A monitor for an external camera. Connect a camera to iPad or Mac, overlay guides and a reference shot, and get a live transcript during interviews.</p>
+      <p class="plat" data-zh>iPad／Mac・iPhone 透過 WiFi 收看</p>
+      <p class="plat" data-en>iPad / Mac · iPhone over Wi-Fi</p>
+      <div class="acts">
+        <a class="btn ghost" data-zh href="alignview/zh-Hant/">了解 ALIGNVIEW</a>
+        <a class="btn ghost" data-en href="alignview/en/">About ALIGNVIEW</a>
+        <span class="status" data-zh>即將推出</span><span class="status" data-en>Coming soon</span>
+      </div>
+    </article>
+  </div>
+
+  <p class="fam-note" data-zh>三個 App 都不需要帳號，資料留在你的裝置上。</p>
+  <p class="fam-note" data-en>None of the apps need an account. Your data stays on your device.</p>
+</main>
+
+<footer class="page">
+  <div class="wrap">
+    <div class="foot-row">
+      <a href="https://tools.arminkao.com/" data-zh>小高工具間</a>
+      <a href="https://tools.arminkao.com/" data-en>Kao's Workshop</a>
+      <a href="https://github.com/qwert2813434-ctrl/ALIGNED">GitHub</a>
+      <a href="mailto:alignediosapp@gmail.com">alignediosapp@gmail.com</a>
+    </div>
+    <p class="foot-copy" data-zh>© 2026 小高 Armin Kao — ALIGNED、ALIGNCAM、ALIGNVIEW 名稱與 logo 為商標。</p>
+    <p class="foot-copy" data-en>© 2026 Armin Kao — ALIGNED, ALIGNCAM and ALIGNVIEW names and logos are trademarks.</p>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script>
+// 語言選單：同頁切換＋記住（不重新載入）
+document.querySelectorAll('[data-setlang]').forEach(function(a){
+  a.addEventListener('click', function(e){
+    e.preventDefault();
+    var l = a.dataset.setlang, h = document.documentElement;
+    h.dataset.lang = l; h.lang = l === 'en' ? 'en' : 'zh-Hant';
+    document.title = l === 'en' ? 'The ALIGN family — ALIGNED, ALIGNCAM, ALIGNVIEW' : 'ALIGN 家族 — ALIGNED、ALIGNCAM、ALIGNVIEW';
+    try { localStorage.setItem('align-lang', l); } catch(err){}
+    a.closest('details').removeAttribute('open');
+  });
+});
+</script>
 </body>
 </html>
