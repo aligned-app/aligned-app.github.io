@@ -41,30 +41,27 @@
   <p>ALIGNVIEW 是外接相機的監看 App。這份政策照 App 的實際行為寫：它用到哪些權限、資料存在哪裡、什麼情況下會有資料離開你的裝置。</p>
 
   <h2>開發者不收集個人資料</h2>
-  <p>ALIGNVIEW 沒有帳號系統、沒有分析工具、沒有廣告，也不追蹤你。開發者收不到你的影像、截圖、逐字稿或使用紀錄。</p>
+  <p>ALIGNVIEW 沒有帳號系統、沒有分析工具、沒有廣告，也不追蹤你。開發者收不到你的影像、截圖、錄音、逐字稿或使用紀錄。</p>
 
   <h2>資料存在哪裡</h2>
   <ul>
     <li>相機畫面只顯示在螢幕上，App 不錄影。</li>
     <li>截圖存進你的系統相簿。</li>
     <li>場景記憶（參考線、疊圖、塗鴉）存在 App 自己的資料夾。</li>
-    <li>逐字稿存在 App 的「文件」資料夾，可以在「檔案」App 或 Mac 的 Finder 裡看到，也可以自己刪除。</li>
-    <li>逐字稿收音時，聲音會分段暫存在裝置上供辨識，轉成文字後就刪除。</li>
+    <li>每錄一場逐字稿，App 會在「文件」資料夾的「訪談」裡開一個資料夾，放整場錄音（錄音.m4a）與逐字稿（逐字稿.txt）。可以在「檔案」App 或 Mac 的 Finder 裡看到，也可以在 App 的說明頁一鍵清除。</li>
+    <li>辨識用的短段落音訊只暫存在裝置上，轉成文字後就刪除。</li>
+    <li>錄音與逐字稿只有在你按「移到…」或「分享」時才會離開這台裝置。</li>
   </ul>
 
   <h2>語音辨識</h2>
   <p>逐字稿存檔的文字，由 App 內建的語音模型在你的裝置上產生，不需要網路。</p>
   <p>收音時畫面上即時跳出的預覽文字，優先使用裝置上的辨識。如果你的裝置不支援裝置上辨識，這段預覽會交給 Apple 的語音辨識服務處理，音訊會傳到 Apple，依 <a href="https://www.apple.com/legal/privacy/">Apple 隱私權政策</a> 處理。開發者收不到這些音訊或文字。</p>
 
-  <h2>WiFi 橋接</h2>
-  <p>打開「分享畫面到 WiFi」後，畫面只在同一個區域網路內傳給其他打開 ALIGNVIEW 的裝置，不經過網際網路，也不經過開發者的伺服器（ALIGNVIEW 沒有伺服器）。不用時請關掉分享。</p>
-
   <h2>權限與用途</h2>
   <table>
     <tr><td>相機</td><td>顯示外接相機或採集卡的畫面。</td></tr>
     <tr><td>麥克風</td><td>訪談逐字稿收音。只在你開始逐字稿時使用。</td></tr>
     <tr><td>語音辨識</td><td>逐字稿的即時預覽文字（見上方「語音辨識」）。</td></tr>
-    <tr><td>區域網路</td><td>WiFi 橋接：尋找並連接同一個網路上的其他裝置。</td></tr>
     <tr><td>照片（僅加入）</td><td>把截圖存進相簿。App 不會瀏覽整個相簿，也不修改、不刪除你的照片；只會取得你透過系統照片選擇器選取的照片。</td></tr>
   </table>
   <p>疊圖用的照片透過系統的照片選擇器挑選，App 只拿得到你選的那一張，看不到整個相簿。</p>
@@ -88,34 +85,31 @@
   <p>ALIGNVIEW is a monitor app for an external camera. This policy describes what the app actually does: which permissions it uses, where data is stored, and when any data leaves your device.</p>
 
   <h2>The developer collects no personal data</h2>
-  <p>ALIGNVIEW has no accounts, no analytics, no ads, and no tracking. The developer never receives your video, snapshots, transcripts or usage data.</p>
+  <p>ALIGNVIEW has no accounts, no analytics, no ads, and no tracking. The developer never receives your video, snapshots, recordings, transcripts or usage data.</p>
 
   <h2>Where your data lives</h2>
   <ul>
     <li>The camera picture is only shown on screen. The app does not record video.</li>
     <li>Snapshots are saved to your system photo library.</li>
     <li>Scene memory (guides, overlay, doodles) is stored in the app's own folder.</li>
-    <li>Transcripts are stored in the app's Documents folder, visible in the Files app or in Finder on Mac, and you can delete them there.</li>
-    <li>While transcribing, audio is buffered on the device in short segments for recognition and deleted once it has been turned into text.</li>
+    <li>Each transcript session gets its own folder under “訪談” (Interviews) in the app's Documents folder, holding the full recording (錄音.m4a) and the transcript (逐字稿.txt). You can see them in the Files app or the Mac Finder, and clear them all from the app's help page.</li>
+    <li>Short audio segments used for recognition are buffered on the device and deleted once they have been turned into text.</li>
+    <li>Recordings and transcripts leave the device only when you use “Move to…” or “Share”.</li>
   </ul>
 
   <h2>Speech recognition</h2>
   <p>The saved transcript text is produced on your device by a speech model built into the app. No network is needed.</p>
   <p>The live preview text that appears while recording uses on-device recognition when available. If your device does not support on-device recognition, that preview is handled by Apple's speech recognition service: the audio is sent to Apple and processed under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. The developer does not receive this audio or text.</p>
 
-  <h2>Wi-Fi bridge</h2>
-  <p>When “Share to Wi-Fi” is on, the picture is sent only within your local network to other devices running ALIGNVIEW. It does not go over the internet or through any developer server (ALIGNVIEW has none). Turn sharing off when you don't need it.</p>
-
   <h2>Permissions</h2>
   <table>
     <tr><td>Camera</td><td>Show the picture from an external camera or capture card.</td></tr>
     <tr><td>Microphone</td><td>Record audio for the interview transcript, only when you start a transcript.</td></tr>
     <tr><td>Speech recognition</td><td>Live preview text for the transcript (see “Speech recognition” above).</td></tr>
-    <tr><td>Local network</td><td>Wi-Fi bridge: find and connect to other devices on the same network.</td></tr>
     <tr><td>Photos (add only)</td><td>Save snapshots to your library. The app never browses your whole library and never changes or deletes your photos; it only receives photos you pick in the system photo picker.</td></tr>
   </table>
   <p>The overlay photo is chosen through the system photo picker, so the app only receives the one photo you pick, not your library.</p>
-  <p>You can turn any of these off at any time in Settings (iPhone/iPad) or System Settings → Privacy &amp; Security (Mac). Only the related feature stops working.</p>
+  <p>You can turn any of these off at any time in Settings (iPad) or System Settings → Privacy &amp; Security (Mac). Only the related feature stops working.</p>
 
   <h2>Children</h2>
   <p>The developer does not collect personal data from anyone, including children; the Apple speech recognition exception above still applies.</p>
